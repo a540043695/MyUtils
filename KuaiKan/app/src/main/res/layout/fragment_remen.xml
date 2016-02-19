@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_remen_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_remen_vp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_remen_point"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vp_remen_vp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="每周排行榜"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_mzphb"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title_dzrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="读者热评"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_dzrp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv_dzrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title_xzcl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="新作出炉"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_xzcl"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv_xzcl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title_zblt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="主编力推"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_zblt"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv_zblt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title_gfhd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="官方活动"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_gfhd"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv_gfhd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title_wjjz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="完结佳作"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_wjjz"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv_wjjz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/tv_title_syzp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="所有作品"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="查看更多"
+                    android:textColor="#b7b5b5"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_remen_syzp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_remen_hsv_syzp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
